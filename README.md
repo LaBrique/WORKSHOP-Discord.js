@@ -4,12 +4,6 @@ In this workshop, you will learn the basics to create a responsive Discord bot u
 
 ## Pre-requisites
 
-### Installing Node.js and NPM
-`sudo apt-get install nodejs`
-
-### Setting up your working directory
-Clone this repository, then execute `npm install .` at the root to install all the required dependancies.
-
 ### Creating your bot user
 Of course you will need a Discord account.
 If you do not have one already, you can create one [here](https://discordapp.com/register)
@@ -34,5 +28,17 @@ Then visit an URL you'll have to modify a bit:
 Replace \[ID\] (including brackets) with your App's client ID.
 
 On this URL you will be prompted to add your bot to a server.
-Choose the Workshop server, make sure all the fitting permissions boxes are checked, then proceed.
+Choose the Workshop server, make sure all the fitting permission boxes are checked, then proceed.
 
+Your Bot should now appear on the server!
+
+
+### Installing Node.js and NPM
+`sudo apt-get install nodejs`
+
+### Setting up your working directory
+Clone this repository, then execute `npm install .` at the root to install all the required dependancies.
+
+In `config.json`, fill the `prefix` field with the prefix you want your bot to answer to, and `token` with your Bot's token (keep it secret!).
+
+Now if you execute `node .`, your Bot should wake up and, with the little code provided, respond to `[prefix]ping` by `Pong!` on Discord.
