@@ -83,3 +83,10 @@ To this end, we will have to dig deeper inside discord.js' documentation:
 - [guild](https://discord.js.org/#/docs/main/stable/class/Guild)
 - [member](https://discord.js.org/#/docs/main/stable/class/GuildMember)
 - [user](https://discord.js.org/#/docs/main/stable/class/User)
+
+From the given message, you can retrieve what channel it was sent to. From this channel you can retrieve its Guild, then loop on every member on the Guild and print them all.
+
+## Going further
+
+Bots are powerful tools, and they can do pretty much anything you want with them, ideas are unlimited!
+With decent knowledge of Node.js, and with [discord.js' documentation](https://discord.js.org/#/docs/main/stable/general/welcome), it is up to you to make your bot do as you wish.
