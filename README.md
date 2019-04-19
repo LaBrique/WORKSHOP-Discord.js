@@ -19,6 +19,7 @@ Once created, move to the `Bot` section.
 Create a new Bot using the `Add Bot` button, then fill in any necessary info, such as a profile picture and a name.
 Acknowledge your new Bot's token, but do **NOT** reveal it to anyone! This token is as sensitive as a password.
 Untick `Public Bot` so only you can invite it to servers.
+![Bot Menu](https://cdn.discordapp.com/attachments/517409912129716224/568734579318456349/unknown.png)
 
 ### Adding your bot to the server
 Join this workshop's [dedicated server](https://discord.gg/hmmcufG).
@@ -29,6 +30,8 @@ Replace \[ID\] (including brackets) with your App's client ID.
 
 On this URL you will be prompted to add your bot to a server.
 Choose the Workshop server, make sure all the fitting permission boxes are checked, then proceed.
+
+![OAuth2](https://cdn.discordapp.com/attachments/517409912129716224/568735675533492234/unknown.png)
 
 Your Bot should now appear on the server!
 
@@ -85,6 +88,10 @@ To this end, we will have to dig deeper inside discord.js' documentation:
 - [user](https://discord.js.org/#/docs/main/stable/class/User)
 
 From the given message, you can retrieve what channel it was sent to. From this channel you can retrieve its Guild, then loop on every member on the Guild and print them all.
+
+As a final task for this workshop, code a `prune` command for your bot:
+- Input: `prune <int x (5-100)>
+- Effect: Deletes x (from 5 to 100) messages from the current channel
 
 ## Going further
 
