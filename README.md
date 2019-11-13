@@ -22,7 +22,7 @@ Untick `Public Bot` so only you can invite it to servers.
 ![Bot Menu](https://cdn.discordapp.com/attachments/517409912129716224/568734579318456349/unknown.png)
 
 ### Adding your bot to the server
-Join this workshop's [dedicated server](https://discord.gg/hmmcufG).
+Join this workshop's [dedicated server](https://discord.gg/MUaPYxX).
 
 Then visit an URL you'll have to modify a bit:
 `https://discordapp.com/api/oauth2/authorize?client_id=[ID]&scope=bot&permissions=126016`
