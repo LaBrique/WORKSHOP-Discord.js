@@ -103,7 +103,7 @@ As a final task for this workshop, code the following commands for your bot:
         - Creation Date
         - Region
         - Owner  
-     It should also add a timestamp as the embed's footer.
+   It should also add a timestamp as the embed's footer.
 
 ##### Avatar
 
