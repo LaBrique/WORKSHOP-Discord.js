@@ -80,7 +80,7 @@ Let's add some utility commands!
 Before anything else, it is important to know that Discord servers are referred to as `Guilds`.
 
 Upon receiving the message `[:prefix]list`, your bot should list all the users present in the guild.
-To this end, we will have to dig deeper inside discord.js' documentation:
+To do this, we will have to dig deeper inside discord.js' documentation:
 - [message](https://discord.js.org/#/docs/main/stable/class/Message)
 - [channel](https://discord.js.org/#/docs/main/stable/class/TextChannel)
 - [guild](https://discord.js.org/#/docs/main/stable/class/Guild)
@@ -89,9 +89,33 @@ To this end, we will have to dig deeper inside discord.js' documentation:
 
 From the given message, you can retrieve what channel it was sent to. From this channel you can retrieve its Guild, then loop on every member on the Guild and print them all.
 
-As a final task for this workshop, code a `prune` command for your bot:
-- Input: `prune <int x (5-100)>
-- Effect: Deletes x (from 5 to 100) messages from the current channel
+As a final task for this workshop, code the following commands for your bot:
+
+##### Prune
+   - Input: `[:prefix]prune <int x (5-100)>`
+   - Effect: Deletes x (from 5 to 100) messages from the current channel
+
+##### Server
+   - Input: `[:prefix]server`
+   - Effect: Displays the following info about the current Guild within a [RichEmbed](https://discord.js.org/#/docs/main/stable/class/RichEmbed):
+        - Name
+        - Icon
+        - Creation Date
+        - Region
+        - Owner
+     It should also add a timestamp as the embed's footer.
+
+##### Avatar
+
+   - Input: `[:prefix]avatar <@user>`
+   - Effect: Displays the mentioned user's avatar in full size.
+   
+##### Play (*Hard!*)
+
+   - Input: `[:prefix]play <YT URL>
+   - Effect: Makes the bot join your current voice channel and start playing the music from the given YouTube URL.
+   
+   Adding the commands `Pause`, `Stop` and `Volume` can make give you greater control over your bot's music.
 
 ## Going further
 
