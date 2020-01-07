@@ -102,7 +102,7 @@ As a final task for this workshop, code the following commands for your bot:
         - Icon
         - Creation Date
         - Region
-        - Owner
+        - Owner  
      It should also add a timestamp as the embed's footer.
 
 ##### Avatar
@@ -113,7 +113,7 @@ As a final task for this workshop, code the following commands for your bot:
 ##### Play (*Hard!*)
 
    - Input: `[:prefix]play <YT URL>
-   - Effect: Makes the bot join your current voice channel and start playing the music from the given YouTube URL.
+   - Effect: Makes the bot join your current voice channel and start playing the music from the given YouTube URL.  
    
    Adding the commands `Pause`, `Stop` and `Volume` can make give you greater control over your bot's music.
 
