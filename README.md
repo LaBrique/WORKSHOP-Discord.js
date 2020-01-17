@@ -112,10 +112,18 @@ As a final task for this workshop, code the following commands for your bot:
    
 ##### Play (*Hard!*)
 
+
    - Input: `[:prefix]play <YT URL>
    - Effect: Makes the bot join your current voice channel and start playing the music from the given YouTube URL.  
    
    Adding the commands `Pause`, `Stop` and `Volume` can make give you greater control over your bot's music.
+
+   
+   You can use the [ytdl-core](https://www.npmjs.com/package/ytdl-core) npm module to help retrieving the audio from the YouTube link.
+   Here are a few pages of discord.js documentation that can prove useful:
+   
+   - [VoiceChannel](https://discord.js.org/#/docs/main/stable/class/VoiceChannel)
+   - [VoiceConnection](https://discord.js.org/#/docs/main/stable/class/VoiceConnection)
 
 ## Going further
 
