@@ -42,7 +42,7 @@ Your Bot should now appear on the server!
 ### Setting up your working directory
 Clone this repository, then execute `npm install .` at the root to install all the required dependancies.
 
-In `config.json`, fill the `prefix` field with the prefix you want your bot to answer to, and `token` with your Bot's token (keep it secret!).
+In `config.json`, fill the `prefix` field with the prefix you want your bot to answer to, `token` with your Bot's token (keep it secret!), and `id` with your own user id, so your bot can recognize its creator and answer to you only. One method of getting your user id is to mention yourself, and add a backslash right before the mention.
 
 Now if you execute `node .`, your Bot should wake up and, with the little code provided, respond to `[:prefix]ping` by `Pong!` on Discord.
 
@@ -57,7 +57,7 @@ If we take a look at the bit of code provided by the repository, we can see an e
 
 ```js
 client.on('message', message => {
-    if (!message.content.startsWith(prefix) || message.author.bot) return;
+    if (!message.content.startsWith(prefix) || message.author.bot || message.author.id != author) return;
     if (message.content == `${prefix}ping`)
         message.channel.send("Pong!");
 });
