@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const { prefix, token } = require('./config.json');
+const { prefix, token, author } = require('./config.json');
 
 const client = new Discord.Client();
 
@@ -8,7 +8,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-	if (!message.content.startsWith(prefix) || message.author.bot) return;
+	if (!message.content.startsWith(prefix) || message.author.bot || message.author.id != author) return;
     if (message.content == `${prefix}ping`)
         message.channel.send("Pong!");
 });
