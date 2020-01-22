@@ -40,7 +40,7 @@ Your Bot should now appear on the server!
 `sudo apt-get install nodejs`
 
 ### Setting up your working directory
-Clone this repository, then execute `npm install .` at the root to install all the required dependancies.
+Clone this repository, then execute `npm install .` at the root to install all the required dependencies.
 
 In `config.json`, fill the `prefix` field with the prefix you want your bot to answer to, `token` with your Bot's token (keep it secret!), and `id` with your own user id, so your bot can recognize its creator and answer to you only. One method of getting your user id is to mention yourself, and add a backslash right before the mention.
 
